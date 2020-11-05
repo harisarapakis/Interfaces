@@ -15,15 +15,14 @@ namespace Interfaces.Models
         {
             this.IsON = Ison;
         }
-
-        public void SteerLeft()
+        public void SteerLeft(bool steer) // KANW HIDE TIN METHODO TIS AUTOMOBILE KAI EKTELW TIN PARAKATW 
+        //MIA ABSTRACT METHODO TIN YPOXREWNW OPOIA CLASS KANEI INHERITE MIA ABS CLASS ME ABS METHODO NA PREPEI NA EKTELESEI TIN ABSTARCT METHODO
         {
-            Console.WriteLine("The car is steering left");
+            Console.WriteLine("The motorbike is sterring left:" + steer);
         }
-
-        public void SteerRight()
+        public void SteerRight(bool steer)
         {
-            Console.WriteLine("The car is steering right");
+            Console.WriteLine("The motorbike is steering right:" + steer);
         }
         public void Steer(bool steerLeft)
         {
@@ -34,6 +33,11 @@ namespace Interfaces.Models
         public void Break()
         {
             Console.WriteLine("The car is breaking");
+        }
+
+        public void Reverse()
+        {
+            Console.WriteLine("Reverse");
         }
     }
 

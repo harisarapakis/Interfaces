@@ -20,8 +20,8 @@ namespace Interfaces
             Car car = new Car(true);
             Console.WriteLine(car.IsON);
             car.Stop();
-            car.SteerLeft();
-            car.SteerRight();
+            car.SteerLeft(true);
+            car.SteerRight(false);
             car.Steer(true);
             Console.WriteLine(car.IsON);
 
@@ -29,12 +29,20 @@ namespace Interfaces
             Motorbike moto = new Motorbike();
             moto.Stop();
             Console.WriteLine(moto.IsON);
-            moto.SteerLeft();
+            moto.SteerLeft(true);
+            moto.SteerRight(false);
+            moto.Steer(true);
+
+            Console.WriteLine("Boat");
+            Boat boat = new Boat();
+            boat.Stop();
+            Console.WriteLine(moto.IsON);
+            //boat.SteerLeft(true);
+            //boat.SteerRight(false);
+            boat.Steer(true);
 
             Console.WriteLine();
-            Motorbike motorbike = new Motorbike(true);
-            Console.WriteLine(motorbike.IsON);
-            motorbike.SteerLeft();
+          
 
         }
     }

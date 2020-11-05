@@ -7,7 +7,7 @@ using Interfaces.Interfaces;
 
 namespace Interfaces.Models
 {
-    class Boat : Automobile,IAutoMobileActions
+    class Boat : Automobile,IAutoMobileActions, IBoatActions
     {
         public Boat() //default
         {
@@ -18,24 +18,30 @@ namespace Interfaces.Models
         {
             this.IsON = ison;
         }
+
+
+        public void SteerLeft(bool s) // KANW HIDE TIN METHODO TIS AUTOMOBILE KAI EKTELW TIN PARAKATW 
+        //MIA ABSTRACT METHODO TIN YPOXREWNW OPOIA CLASS KANEI INHERITE MIA ABS CLASS ME ABS METHODO NA PREPEI NA EKTELESEI TIN ABSTARCT METHODO
+        {
+            Console.WriteLine("The motorbike is sterring left:"+s);
+        }
+        public void SteerRight(bool s)
+        {
+            Console.WriteLine("The motorbike is steering right:"+s);
+        }
         public void Steer(bool steerLeft)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The motorbike is steering :" + steerLeft);
         }
 
-        public void SteerLeft()
+        public void Break()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("The motorbike is breaking");
         }
 
-        public void SteerRight()
+          public void Reverse()
         {
-            throw new NotImplementedException();
-        }
-
-        public void Reverse()
-        {
-            Console.WriteLine("The boat is reversing");
+            Console.WriteLine("Reverse");
         }
     }
 }

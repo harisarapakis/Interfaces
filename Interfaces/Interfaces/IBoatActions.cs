@@ -8,5 +8,10 @@ namespace Interfaces.Interfaces
 {
     interface IBoatActions
     {
+        void SteerLeft(bool s);
+        void SteerRight(bool s);
+        void Steer(bool steerLeft);
+        void Break();
+        void Reverse();
     }
 }

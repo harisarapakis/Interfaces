@@ -8,5 +8,11 @@ namespace Interfaces.Interfaces
 {
     interface ICarActions
     {
+        void SteerLeft(bool s);
+        void SteerRight(bool s);
+        void Steer(bool steerLeft);
+        void Break();
+        void Reverse();
+
     }
 }

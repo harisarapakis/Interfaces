@@ -8,8 +8,10 @@ namespace Interfaces.Interfaces
 {
     interface IAutoMobileActions
     {
-        void SteerLeft();
-        void SteerRight();
+        void SteerLeft(bool s);
+        void SteerRight(bool s);
         void Steer(bool steerLeft);
+        void Break();
+        void Reverse();
     }
 }
