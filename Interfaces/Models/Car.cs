@@ -18,11 +18,11 @@ namespace Interfaces.Models
         public void SteerLeft(bool steer) // KANW HIDE TIN METHODO TIS AUTOMOBILE KAI EKTELW TIN PARAKATW 
         //MIA ABSTRACT METHODO TIN YPOXREWNW OPOIA CLASS KANEI INHERITE MIA ABS CLASS ME ABS METHODO NA PREPEI NA EKTELESEI TIN ABSTARCT METHODO
         {
-            Console.WriteLine("The motorbike is sterring left:" + steer);
+            Console.WriteLine("The car is sterring left:" + steer);
         }
         public void SteerRight(bool steer)
         {
-            Console.WriteLine("The motorbike is steering right:" + steer);
+            Console.WriteLine("The car is steering right:" + steer);
         }
         public void Steer(bool steerLeft)
         {

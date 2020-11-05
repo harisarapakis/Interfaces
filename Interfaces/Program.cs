@@ -23,6 +23,8 @@ namespace Interfaces
             car.SteerLeft(true);
             car.SteerRight(false);
             car.Steer(true);
+            car.Break();
+            car.Reverse();
             Console.WriteLine(car.IsON);
 
             Console.WriteLine("Moto");
@@ -32,14 +34,20 @@ namespace Interfaces
             moto.SteerLeft(true);
             moto.SteerRight(false);
             moto.Steer(true);
-
+            moto.Break();
+            moto.Reverse();
             Console.WriteLine("Boat");
             Boat boat = new Boat();
             boat.Stop();
+            boat.SteerLeft(true);
+            boat.SteerRight(false);
+            boat.Steer(true);
+            boat.Break();
+            boat.Reverse();
             Console.WriteLine(moto.IsON);
+            
             //boat.SteerLeft(true);
             //boat.SteerRight(false);
-            boat.Steer(true);
 
             Console.WriteLine();
           
